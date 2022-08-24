@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Merriweather:wght@300;400;700;900&display=swap');
+*{
+  box-sizing: border-box;
+}
+html, body {
+          font-family: 'Merriweather', serif; /* Tipo de fuente  */
+          background: #caf0f8; /* Color de fondo */
+          color: black;
+          scroll-behavior: smooth; /* Para que la navegabilidad descienda de manera suave */
+}
+a {
+     text-decoration: none; /* Quitar el subrayado a las etiquetas de anclajes "a"  */
+}
+#navbar .logo {
+          text-transform: uppercase;
+          font-size: 25px;
+          padding-top: 10px;
+          font-weight: 400;
+          float: right;
+}
+#navbar ul {
+          list-style: none; /* Quitar los puntos de viñetas a la lista */
+          text-transform: uppercase; /* Pasar de minuscula a mayuscula */
+          float: left;
+}
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+}
+#navbar ul li a:hover {
+  background: #48cae4;
+}
+.home-img {
+            float: right;
+            width: 50%;
+}
+.home-img img {
+      width: 90%;
+}
+.home-text {
+        float: left;
+        width: 50%;
+        padding: 20px 20px 20px 40px;
+}
