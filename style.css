@@ -1,0 +1,120 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+html, body {
+    background: #0096c7;
+    color: #FFFFFF;
+    scroll-behavior: smooth;
+}
+.container {
+    /* margin: 10px 10px; */
+    max-width: 1325px;
+    overflow: auto;
+    /* padding: 0 5px; */
+  }
+
+a {
+    text-decoration: none;
+}
+#navbar a {
+    color: #FFFFFF;
+}
+
+/* Estilos de la seccion de registro */
+ /* Contact */
+ #registro {
+    width: 100%;
+    margin: 10px;
+    padding: 20px 20px;
+    background: #023e8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  .registro-form {
+    float: left;
+    width: 40%;
+    margin: 20px 20px;
+    /* padding: 20px;     */
+  }
+  
+  .registro-title {
+    float: right;
+    width: 60%;
+    margin: 20px 20px;
+    /* padding-top: 160px; */
+  }
+  .registro-title p {
+    font-size: 40px;
+  }
+  form .form-group {
+    margin-bottom: 1rem;
+  }  
+  form .form-control {
+    /* display: block; */
+    width: 100%;
+    padding: 0.375rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border: none;     
+  }
+    /* Boton Form */
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 14px 23px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .btn-light {
+    background: #03045e;
+    border: 1px solid #03045e;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .btn-light:hover {
+    background: #fff;
+    border: 1px solid #03045e;
+    color: #03045e;
+  }
+  .clima {
+    background: white;
+    width: 40%;
+    border-radius: 10px;
+    border: gray solid 1px;
+    color: #03045e;
+    padding: 20px;
+    margin: 5px;
+    overflow: auto;
+
+  }
+  .card-left {
+    float: left;
+  }
+  .card-rigth {
+    float: right;
+    color: black;
+  }
+
+  .card label {
+    display: block;
+    margin-bottom: 3px;
+  }
+  .card #temp {
+    color: #db9426;
+    font-size: 30px;
+  }
+  .gray-bg {
+    background: #dddddd;
+  }
+  
