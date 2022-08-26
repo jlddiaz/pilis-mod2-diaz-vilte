@@ -53,12 +53,17 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=-24.183084917115796&l
     let temp = parseFloat(json.main.temp) - 273.15; 
     let temp_max = parseFloat(json.main.temp_max) - 273.15; 
     let temp_min = parseFloat(json.main.temp_min) - 273.15; 
+    let visibilidad = parseInt(json.visibility)/1000;
     document.getElementById('ciudad').textContent = json.name; 
     document.getElementById('temp').textContent = temp.toFixed(2)+' °C'; 
     document.getElementById('temp_max').textContent = 'MAX: '+temp_max.toFixed(2)+' °C'; 
     document.getElementById('temp_min').textContent = 'MIN: '+temp_min.toFixed(2)+' °C'; 
     document.getElementById('humedad').textContent = 'HUMEDAD: '+json.main.humidity+ '%';
     document.getElementById('presion').textContent = 'PRESIÓN: '+json.main.pressure+' hPa';
+    document.getElementById('visibilidad').textContent = 'VISIBILIDAD: '+visibilidad+' Km';
+    //Agregar icono del clima
+    let icon = json.weather[0].icon;
+    document.getElementById('clima-icon').src = "http://openweathermap.org/img/wn/"+icon+"@2x.png"; 
 
 })
 .catch((err) => console.log(err));
