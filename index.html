@@ -7,55 +7,54 @@
     <title>ExpoJuy 2022</title>
     <link rel="stylesheet" href="style.css" />
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://kit.fontawesome.com/7b7b9e95bb.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7b7b9e95bb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="mainheader">
       <nav id="navbar" class="container">
-        <!-- <div class="container"> -->
         <ul>
-          <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#evento">Expo Juy</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>          
           <li><a href="#registro">Registrate</a></li>
         </ul>
         <div class="logo">
           <a href="#home">
-            <img class="img" src="./assest/img_logo.png" alt="Imagen"
+            <img src="./assest/img_logo.png" alt="Imagen"
           /></a>
-          <!--  <img class="img" src="./assest/img_logo.png" alt="Imagen" /> -->
         </div>
-        <!-- </div> -->
       </nav>
     </header>
     <main>
-      <section id="home">
-        <div class="container">
-          <div class="home-text">
-            <h1>"De Jujuy al Mundo"</h1>
-            <h2>Confirmaron el slogan de la ExpoJuy 2022</h2>
-            <p class="large">
-              Jorge Gurrieri, presidente de la Cámara de Comercio Exterior de
-              Jujuy, dialogó en el programa 30 Denarios de Canal 7 de Jujuy y
-              brindó detalles de la Expo Jujuy 2022.
-              <br />
-              En octubre de este año se llevará adelante la ExpoJuy pospuesta en
-              años anteriores por la pandemia por coronavirus. Jorge Gurrieri,
-              presidente de la Cámara de Comercio Exterior de Jujuy, dialogó con
-              30 Denarios (Canal 7) para brindar algunos detalles de la nueva
-              edición de la muestra.
-            </p>
-          </div>
-          <div class="home-img">
-            <img src="./assest/img_home.jpeg" alt="ExpoJuy" />
-          </div>
+      <!-- Sección del home -->
+      <section id="home" class="container">
+        <div class="home-text">
+          <h1>"De Jujuy al Mundo"</h1>
+          <h2>Confirmaron el slogan de la ExpoJuy 2022</h2>
+          <p class="large">
+            Jorge Gurrieri, presidente de la Cámara de Comercio Exterior de
+            Jujuy, dialogó en el programa 30 Denarios de Canal 7 de Jujuy y
+            brindó detalles de la Expo Jujuy 2022.
+            <br />
+            En octubre de este año se llevará adelante la ExpoJuy pospuesta en
+            años anteriores por la pandemia por coronavirus. Jorge Gurrieri,
+            presidente de la Cámara de Comercio Exterior de Jujuy, dialogó con
+            30 Denarios (Canal 7) para brindar algunos detalles de la nueva
+            edición de la muestra.
+          </p>
+        </div>
+        <div class="home-img">
+          <img src="./assest/img_home.jpeg" alt="ExpoJuy" />
         </div>
       </section>
+      <!-- Sección del Evento de ExpoJuy -->
       <section id="evento" class="container">
-        <!-- <div class="container"> -->
         <div class="event-video">
           <iframe
-            width="560"
-            height="315"
+            width="600"
+            height="415"
             src="https://www.youtube.com/embed/M_1c-PNHPV0"
             title="YouTube video player"
             frameborder="0"
@@ -80,10 +79,9 @@
             mundo”.
           </p>
         </div>
-        <!-- </div> -->
       </section>
+      <!-- Sección Nosotros -->
       <section id="nosotros" class="container">
-        <!-- <div class="container"> -->
         <div class="nosotros-text">
           <h1>Nosotros</h1>
           <p>
@@ -94,16 +92,14 @@
           </p>
         </div>
         <div class="nosotros-img">
-          <img src="./assest/expojuy.jpg" alt="" />
+          <img src="./assest/expojuy.jpg" alt="ciudad cultural"/>
         </div>
-        <!-- </div> -->
       </section>
+      <!-- Sección para el Registro de Nuevos Emprendedores -->
       <section id="registro" class="container">
-        <!-- <div class=""> -->
         <div class="registro-title">
-          <p>Registra tu emprendimiento y participa de la ExpoJuy 2022.</p>
+          <h1>Registra tu emprendimiento y participa de la ExpoJuy 2022.</h1>
         </div>
-        <!-- Formulario de Registro de Emprendedores -->
         <div class="registro-form">
           <form action="" id="formulario">
             <div class="form-group">
@@ -125,18 +121,17 @@
             <button id="enviar" class="btn btn-light">Enviar</button>
           </form>
         </div>
-        <!-- </div> -->
       </section>
     </main>
     <footer>
       <div class="container">
         <section class="clima">
           <div class="clima-title">
-            <h1>Asi esta el clima en el lugar del evento</h1>
+            <h2>Asi esta el clima en el lugar del evento</h2>
           </div>
           <div class="card">
             <div class="card-left">
-              <label for="" id="ciudad"></label>
+              <h3><label for="" id="ciudad"></label></h3>
               <div class="temperatura">
                 <img src="" id="clima-icon" />
                 <span for="" id="temp"></span>
@@ -150,7 +145,10 @@
               <label for="" id="presion"></label>
             </div>
           </div>
-        </section>       
+        </section>
+        <section id="fecha-evento">
+          <img src="./assest/fecha_evento.png" alt="">
+        </section>
         <section class="mapa">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.6668822490055!2d-65.33348658552636!3d-24.18341279074102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0ee2033f07f3%3A0xc77a811c6a4b0561!2sCiudad%20Cultural!5e0!3m2!1ses-419!2sar!4v1661483370835!5m2!1ses-419!2sar"
@@ -163,7 +161,11 @@
           ></iframe>
         </section>
         <section id="whatsapp">
-          <a href="https://wa.me/3885266268?text=Me%20interesa%20saber%20mas%20sobre%20el%20evento" target="_blank">CONTÁCTANOS<i class="fa-brands fa-whatsapp"></i></a>
+          <a
+            href="https://wa.me/3885266268?text=Me%20interesa%20saber%20mas%20sobre%20el%20evento"
+            target="_blank"
+            >CONTÁCTANOS<i class="fa-brands fa-whatsapp"></i
+          ></a>
         </section>
       </div>
     </footer>
