@@ -40,18 +40,22 @@ boton.addEventListener("click", onClick);
 
 //Petición a la Api del Clima
 async function clima() {
-  let response = await fetch(
-    "https://api.openweathermap.org/data/2.5/weather?lat=-24.183084917115796&lon=-65.33127644531041&appid=555083fd438613a78b0609408b019c59"
-  )
-    .then((response) => response.json())
-    .then((json) => {
-      console.log(json);
-      actualizarValoresClima(json);
-    })
-    .catch((err) => console.log(err));
+  try {
+    // Datos requeridos por la Api del Clima
+    let latitud = -24.183084917115796;
+    let longitud = -65.33127644531041;
+    let key_id = '555083fd438613a78b0609408b019c59';
+    // Peticion a la Api del clima
+    let url = "https://api.openweathermap.org/data/2.5/weather?lat="+latitud+"&lon="+longitud+"&appid="+key_id;
+    let response = await fetch(url);
+    let json = await response.json();
+    console.log(json);
+    let actualizar_clima = await actualizarValoresClima(json);
+  } catch {
+    console.log("Algo paso, no se pudo resolver...");
+  }
 }
 clima();
-
 // Funcion para convertir de grados kelvin a grados celsius
 function convertirGradosCelsius(grados_Kelvin) {
   return parseFloat(grados_Kelvin) - 273.15;
